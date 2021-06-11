@@ -3,8 +3,6 @@ package com.bootstrap.extensions
 import android.content.Context
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import androidx.core.view.isGone
-import androidx.core.view.isVisible
 
 fun View.onClick(on: () -> Unit) = setOnClickListener { on() }
 
@@ -19,10 +17,6 @@ fun View.hideKeyboard() {
     inputMethodManager.hideSoftInputFromWindow(windowToken, 0)
 }
 
-fun View.showHide() {
-    isVisible = isGone
-}
-
 fun View.show() {
     this.visibility = View.VISIBLE
 }
@@ -33,4 +27,13 @@ fun View.hide() {
 
 fun View.invisible() {
     this.visibility = View.INVISIBLE
+}
+
+var View.startPadding: Int
+    set(value) = setPadding(value, 0, 0, 0)
+    get() = paddingStart
+
+fun View.clip(background: Int) = this.apply {
+    setBackgroundResource(background)
+    clipToOutline = true
 }

@@ -4,16 +4,19 @@ import android.content.Context
 import coil.ImageLoader
 import coil.util.DebugLogger
 import com.bootstrap.base.BaseViewModel
+import com.bootstrap.flow.FlowViewModel
 import com.bootstrap.main.MainViewModel
 import com.bootstrap.manager.SharedPreferencesManager
 import com.bootstrap.navigation.Screens
 import org.koin.android.BuildConfig
 import org.koin.androidx.experimental.dsl.viewModel
+import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
 import org.koin.experimental.builder.single
 import ru.terrakok.cicerone.Cicerone
 import ru.terrakok.cicerone.Router
+import ru.terrakok.cicerone.Screen
 
 val mainModule = module {
     factory { Cicerone.create() }
@@ -31,6 +34,7 @@ val mainModule = module {
     viewModel<AppViewModel>()
     viewModel<MainViewModel>()
     viewModel<BaseViewModel>()
+    viewModel { (chain: Array<Screen>) -> FlowViewModel(*chain) }
 
     single { get<Context>().getSharedPreferences("shared_preferences", Context.MODE_PRIVATE) }
     single {

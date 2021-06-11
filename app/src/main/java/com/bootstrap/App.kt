@@ -30,8 +30,8 @@ class App : MultiDexApplication() {
     }
 
     private fun initLogger() {
-        val tree = if (BuildConfig.DEBUG) Timber.DebugTree() else return
-        Timber.plant(tree)
+        if (BuildConfig.DEBUG)
+            Timber.plant(Timber.DebugTree())
     }
 
     override fun attachBaseContext(base: Context?) {

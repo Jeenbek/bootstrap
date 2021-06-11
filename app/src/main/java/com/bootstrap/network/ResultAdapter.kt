@@ -86,7 +86,7 @@ private fun <T> extractErrorMessage(response: Response<T>) : ErrorBody? {
             val source: BufferedSource = body.source()
             source.request(Long.MAX_VALUE)
 
-            val buffer: Buffer = source.buffer()
+            val buffer: Buffer = source.buffer
             val charset: Charset =
                 body.contentType()?.charset(Charset.forName("UTF-8"))!!
             val json: String = buffer.clone().readString(charset)

@@ -15,7 +15,11 @@ class MainFragment : FlowFragment<MainViewModel>(R.layout.fragment_main) {
     private val screens by lazy {
         get<Screens>().run {
             mapOf(
-                R.id.navigation_wallet to mainFlow(),
+                R.id.one to mainFlow(),
+                R.id.two to authFlow(),
+                R.id.three to authFlow(),
+                R.id.four to authFlow(),
+                R.id.five to authFlow()
             )
         }
     }

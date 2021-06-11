@@ -21,7 +21,7 @@ open class BaseViewModel : ViewModel(), KoinComponent {
         CoroutineScope(viewModelScope.coroutineContext + get<CoroutineExceptionHandler>())
     }
 
-    open fun exit() = router.exit()
+    open fun exit() = appRouter.exit()
 
     protected var <T> PrivateLiveData<T>.data
         set(value) = this.set(value)

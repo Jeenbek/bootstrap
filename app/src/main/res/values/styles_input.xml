@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Input" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="editText_height">45dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="label_margin_bottom">5dp</item>
+        <item name="inputType">text</item>
+        <item name="errorTextAppearance">@style/Text.Regular</item>
+        <item name="errorTextColor">@color/purple_200</item>
+        <item name="boxStrokeErrorColor">@color/purple_200</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="boxStrokeColor">@color/teal_700</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/design_corner_radius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/design_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/design_corner_radius</item>
+        <item name="boxCornerRadiusTopStart">@dimen/design_corner_radius</item>
+    </style>
+
+    <style name="Input.Dropdown">
+        <item name="dropdown">true</item>
+        <item name="endIconMode">dropdown_menu</item>
+    </style>
+
+    <style name="Input.Password">
+        <item name="endIconMode">password_toggle</item>
+    </style>
+
+    <style name="Input.Multi">
+        <item name="inputType">textMultiLine</item>
+        <item name="editText_lines">4</item>
+    </style>
+
+    <style name="Input.Phone">
+        <item name="inputType">phone</item>
+    </style>
+
+    <style name="Input.Edit">
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
+    <style name="Input.Email">
+        <item name="inputType">textEmailAddress</item>
+    </style>
+
+    <style name="Input.Code">
+        <item name="android:layout_width">48dp</item>
+        <item name="editText_height">48dp</item>
+        <item name="inputType">number</item>
+        <item name="editText_maxLength">1</item>
+        <item name="editText_textSize">22</item>
+        <item name="editTextColor">@color/black</item>
+        <item name="gravityCenter">true</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/design_corner_radius_12</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/design_corner_radius_12</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/design_corner_radius_12</item>
+        <item name="boxCornerRadiusTopStart">@dimen/design_corner_radius_12</item>
+        <item name="boxStrokeColor">@color/teal_700</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeWidth">1dp</item>
+    </style>
+</resources>

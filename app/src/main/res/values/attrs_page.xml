@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Page">
+        <attr name="showToolbar" format="boolean" />
+        <attr name="title" format="string" />
+        <attr name="titleAppearance" format="reference" />
+        <attr name="navIcon" format="reference" />
+        <attr name="showNavIcon" format="boolean" />
+        <attr name="navWidth" format="dimension" />
+        <attr name="titleStartMargin" format="dimension" />
+        <attr name="showToolbarDivider" format="boolean" />
+        <attr name="wrapHeight" format="boolean" />
+        <attr name="titleGravity">
+            <flag name="start" value="0x00800003" />
+            <flag name="center" value="0x11" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text" parent="Widget.AppCompat.TextView" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Text.Regular">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">18sp</item>
+        <item name="lineHeight">43sp</item>
+    </style>
+
+</resources>

@@ -2,7 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_wallet"
-        android:title="Title" />
+        android:id="@+id/one"
+        android:title="one" />
+
+    <item
+        android:id="@+id/two"
+        android:title="two" />
+
+    <item
+        android:id="@+id/three"
+        android:title="three" />
+
+    <item
+        android:id="@+id/four"
+        android:title="four" />
+
+    <item
+        android:id="@+id/five"
+        android:title="five" />
 
 </menu>
